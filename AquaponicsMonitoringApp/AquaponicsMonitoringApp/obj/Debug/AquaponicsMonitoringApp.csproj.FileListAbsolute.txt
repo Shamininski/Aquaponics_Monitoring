@@ -1,0 +1,60 @@
+C:\Users\Eldané\Documents\Belgium Campus\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\bin\Debug\AquaponicsMonitoringApp.exe
+C:\Users\Eldané\Documents\Belgium Campus\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\bin\Debug\AquaponicsMonitoringApp.pdb
+C:\Users\Eldané\Documents\Belgium Campus\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.csprojResolveAssemblyReference.cache
+C:\Users\Eldané\Documents\Belgium Campus\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.Properties.Resources.resources
+C:\Users\Eldané\Documents\Belgium Campus\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.csproj.GenerateResource.Cache
+C:\Users\Eldané\Documents\Belgium Campus\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.exe
+C:\Users\Eldané\Documents\Belgium Campus\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.pdb
+C:\Users\Eldané\Documents\Belgium Campus\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmMainDashboard.resources
+C:\Users\Eldané\Documents\Belgium Campus\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmLogin.resources
+C:\Users\Eldané\Documents\Belgium Campus\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmFormSeparator.resources
+C:\Users\Eldané\Documents\Belgium Campus\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmSettingsMainDash.resources
+C:\Users\Eldané\Documents\Belgium Campus\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmEditSensor.resources
+F:\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.exe
+F:\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.pdb
+F:\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\bin\Debug\AquaponicsMonitoringApp.exe
+F:\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\bin\Debug\AquaponicsMonitoringApp.pdb
+F:\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.csprojResolveAssemblyReference.cache
+F:\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmEditSensor.resources
+F:\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmFormSeparator.resources
+F:\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmLogin.resources
+F:\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmMainDashboard.resources
+F:\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmNotificationSettings.resources
+F:\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmSettingsMainDash.resources
+F:\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.Properties.Resources.resources
+F:\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.csproj.GenerateResource.Cache
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.exe
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.pdb
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\bin\Debug\AquaponicsMonitoringApp.exe
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\bin\Debug\AquaponicsMonitoringApp.pdb
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.csprojResolveAssemblyReference.cache
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmEditSensor.resources
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmFormSeparator.resources
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmLogin.resources
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmMainDashboard.resources
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmNotificationSettings.resources
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmSettingsMainDash.resources
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.Properties.Resources.resources
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.csproj.GenerateResource.Cache
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmTankSensorTemplate.resources
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\bin\Debug\AquaponicsMonitoringApp.exe.config
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmEditUser.resources
+C:\Users\Eldane\Desktop\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmLiveGraph.resources
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\bin\Debug\AquaponicsMonitoringApp.exe.config
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.exe
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.pdb
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\bin\Debug\AquaponicsMonitoringApp.exe
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\bin\Debug\AquaponicsMonitoringApp.pdb
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.csprojResolveAssemblyReference.cache
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmEditSensor.resources
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmEditUser.resources
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmFormSeparator.resources
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmLiveGraph.resources
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmLogin.resources
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmMainDashboard.resources
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmNotificationSettings.resources
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmRegister.resources
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmSettingsMainDash.resources
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.Properties.Resources.resources
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmTankSensorTemplate.resources
+C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.csproj.GenerateResource.Cache

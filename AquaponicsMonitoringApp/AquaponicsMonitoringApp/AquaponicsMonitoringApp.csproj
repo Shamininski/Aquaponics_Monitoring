@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F41B8467-A1AE-459F-B211-D2F405E146DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AquaponicsMonitoringApp</RootNamespace>
+    <AssemblyName>AquaponicsMonitoringApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationLayer\Contact.cs" />
+    <Compile Include="ApplicationLayer\FrequencySettings.cs" />
+    <Compile Include="ApplicationLayer\NotificationHandler.cs" />
+    <Compile Include="ApplicationLayer\Notifications.cs" />
+    <Compile Include="ApplicationLayer\Sensor.cs" />
+    <Compile Include="ApplicationLayer\SensorReading.cs" />
+    <Compile Include="ApplicationLayer\User.cs" />
+    <Compile Include="AquaponicsPhysioTestDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AquaponicsPhysioTestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\DataHandler.cs" />
+    <Compile Include="DataAccessLayer\FileHandler.cs" />
+    <Compile Include="DataAccessLayer\QueryBuilder.cs" />
+    <Compile Include="frmEditSensor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditSensor.Designer.cs">
+      <DependentUpon>frmEditSensor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditUser.Designer.cs">
+      <DependentUpon>frmEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormSeparator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormSeparator.Designer.cs">
+      <DependentUpon>frmFormSeparator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLiveGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLiveGraph.Designer.cs">
+      <DependentUpon>frmLiveGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainDashboard.Designer.cs">
+      <DependentUpon>frmMainDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotifications.Designer.cs">
+      <DependentUpon>frmNotifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotificationSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotificationSettings.Designer.cs">
+      <DependentUpon>frmNotificationSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettingsMainDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettingsMainDash.Designer.cs">
+      <DependentUpon>frmSettingsMainDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TankSensorTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TankSensorTemplate.Designer.cs">
+      <DependentUpon>TankSensorTemplate.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmEditSensor.resx">
+      <DependentUpon>frmEditSensor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditUser.resx">
+      <DependentUpon>frmEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormSeparator.resx">
+      <DependentUpon>frmFormSeparator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLiveGraph.resx">
+      <DependentUpon>frmLiveGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainDashboard.resx">
+      <DependentUpon>frmMainDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotificationSettings.resx">
+      <DependentUpon>frmNotificationSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettingsMainDash.resx">
+      <DependentUpon>frmSettingsMainDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TankSensorTemplate.resx">
+      <DependentUpon>TankSensorTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AquaponicsPhysioTestDataSet.xsc">
+      <DependentUpon>AquaponicsPhysioTestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AquaponicsPhysioTestDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AquaponicsPhysioTestDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AquaponicsPhysioTestDataSet.xss">
+      <DependentUpon>AquaponicsPhysioTestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
