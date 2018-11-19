@@ -12,9 +12,14 @@ namespace AquaponicsMonitoringApp
 {
     public partial class frmRegister : Form
     {
+        /// <summary>
+        /// Form Creator: Eldané
+        /// </summary>
         public frmRegister()
         {
             InitializeComponent();
+            pnlLogin_Register.BackColor = Color.FromArgb(50, Color.White);
+
             User user = new User();
             List<string> allSecurityQuestions = new List<string>(); // get all the security questions from a textfile
             allSecurityQuestions = user.getSecurityQuestions();
@@ -23,7 +28,6 @@ namespace AquaponicsMonitoringApp
             {
                 cmbSecurityQuestion.Items.Add(question);
             }
-            pnlRegisterDetails.Visible = false;
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -196,8 +200,8 @@ namespace AquaponicsMonitoringApp
                 }
             }
 
-            frmMainDashboard MainDash = new frmMainDashboard();
-            MainDash.Show();
+            frmSettingsMainDash settingsMain = new frmSettingsMainDash();
+            settingsMain.Show();
             this.Close();
         }
     }

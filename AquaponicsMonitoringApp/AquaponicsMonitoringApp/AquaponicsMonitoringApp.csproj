@@ -81,12 +81,6 @@
     <Compile Include="frmFormSeparator.Designer.cs">
       <DependentUpon>frmFormSeparator.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLiveGraph.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLiveGraph.Designer.cs">
-      <DependentUpon>frmLiveGraph.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmMainDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,12 +92,6 @@
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmNotifications.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmNotifications.Designer.cs">
-      <DependentUpon>frmNotifications.cs</DependentUpon>
     </Compile>
     <Compile Include="frmNotificationSettings.cs">
       <SubType>Form</SubType>
@@ -139,9 +127,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFormSeparator.resx">
       <DependentUpon>frmFormSeparator.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLiveGraph.resx">
-      <DependentUpon>frmLiveGraph.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

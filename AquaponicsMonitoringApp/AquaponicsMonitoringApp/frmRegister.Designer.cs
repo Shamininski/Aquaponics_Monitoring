@@ -393,7 +393,7 @@
             this.btnREGISTERform.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
             this.btnREGISTERform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnREGISTERform.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnREGISTERform.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnREGISTERform.ForeColor = System.Drawing.Color.LimeGreen;
             this.btnREGISTERform.Image = ((System.Drawing.Image)(resources.GetObject("btnREGISTERform.Image")));
             this.btnREGISTERform.Location = new System.Drawing.Point(10, 18);
             this.btnREGISTERform.Name = "btnREGISTERform";
@@ -410,8 +410,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(486, 594);
-            this.Controls.Add(this.pnlLogin_Register);
             this.Controls.Add(this.pnlHeaderRegister);
+            this.Controls.Add(this.pnlLogin_Register);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

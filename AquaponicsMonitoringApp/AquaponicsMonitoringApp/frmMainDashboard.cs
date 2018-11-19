@@ -13,6 +13,11 @@ namespace AquaponicsMonitoringApp
 {
     public partial class frmMainDashboard : Form
     {
+        /// <summary>
+        /// Form Creator: Eldané
+        /// </summary>
+
+        bool continueThread;
         public frmMainDashboard()
         {
             InitializeComponent();
@@ -23,6 +28,9 @@ namespace AquaponicsMonitoringApp
             Dictionary<string, string> allData = reading.currentReadingPerSensor(allSensors);
             int counter = 0;
 
+            // Each component is only accessible through the System.Windows.Form.Control class.
+            // Therefore to change the Text property of the lables in each of the panels the following
+            // foreach loops are necessary.
             foreach(KeyValuePair<string,string> kvp in allData)
             {
                 string panelName = "pnlDashAction" + Convert.ToString(counter + 1);
@@ -42,7 +50,7 @@ namespace AquaponicsMonitoringApp
                                 {
                                     if (lableItem.Name == lableName)
                                     {
-                                        string tank = kvp.Key;
+                                        string tank = kvp.Key.ToUpper(); // The Key = tankname
                                         lableItem.Text = tank;
                                     }
                                 }
@@ -50,22 +58,39 @@ namespace AquaponicsMonitoringApp
 
                             string tempLable = "lblTempA" + Convert.ToString(counter + 1);
                             string pHLable = "lblPhA" + Convert.ToString(counter + 1);
+
                             string tankReading = kvp.Value;
                             string[] field = tankReading.Split('#');
+                            string tempReading = "";
+                            string pHReading = "";
+                            // This check is necessary because in some cases the pH reading can be read before the 
+                            // temperature reading or vice versa
+                            if (field[0].Substring(field[0].Length - 1, 1) == "°")
+                            {
+                                tempReading = field[0] + "C";
+                                pHReading = field[1];
+                            }
+                            else
+                            {
+                                tempReading = field[1] + "C";
+                                pHReading = field[0];
+                            }
 
                             if (panelItem.Name == tempLable)
                             {
-                                string tempReading = field[0] +"°C";
+                                
                                 panelItem.Text = tempReading;
                             }
                             else if (panelItem.Name == pHLable)
                             {
-                                string pHReading = field[1];
+                               
                                 panelItem.Text = pHReading;
                             }
                         }
                     }
                 }
+
+                counter++;
             }
 
         }
@@ -76,6 +101,8 @@ namespace AquaponicsMonitoringApp
             btnDashboard.BackColor = Color.FromArgb(58, 131, 79);
 
             FrequencySettings frequency = new FrequencySettings();
+            // Display the current data retrieval interval as default value in the numeric
+            // spinner.
             nudTimeInterval.Value = frequency.getFrequency();
             btnSaveTimeInterval.Visible = false;
 
@@ -83,7 +110,7 @@ namespace AquaponicsMonitoringApp
             t.Start();
 
             timer.Start();
-
+            continueThread = true;
         }
 
 
@@ -99,7 +126,7 @@ namespace AquaponicsMonitoringApp
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            t.Abort();
+            continueThread = false;
             timer.Stop();
             Application.Exit();
         }
@@ -128,6 +155,8 @@ namespace AquaponicsMonitoringApp
 
             List<Sensor> allSensorsForTank = new List<Sensor>();
 
+            // Populate list with all sensors for specific tank, to send through to the
+            // frmTankSensorTemplate.
             foreach (Sensor item in allSensors)
             {
                 if (item.Location.ToUpper() == lblDashAction1.Text)
@@ -624,9 +653,6 @@ namespace AquaponicsMonitoringApp
 
         private void btnLiveGraph_Click(object sender, EventArgs e)
         {
-            frmLiveGraph LiveGraph = new frmLiveGraph();
-            LiveGraph.Show();
-            this.Hide();
         }
 
         private void nudTimeInterval_ValueChanged(object sender, EventArgs e)
@@ -649,15 +675,26 @@ namespace AquaponicsMonitoringApp
         }
 
         List<string> componentNames = new List<string>();
+
+        /// <summary>
+        /// DoThisAllTheTime() 
+        /// This method is used to sync the text file with the database. Every minute it checks whether
+        /// new sensor readings have been written to the text files and if new readings occured then those readings
+        /// will be added to the database.
+        /// 
+        /// While the new readings are being written to the database it also checks to see if the readings
+        /// are still within the specified critical ranges. If the readings fall outside of the critical
+        /// range then an email is send to notify the users.
+        /// </summary>
         public void DoThisAllTheTime()
         {
             int currentfrequency = 0;
             Sensor sensor = new Sensor();
             List<Sensor> allSensors = sensor.getAllSensors();
             FrequencySettings frequencySettings = new FrequencySettings();
-            currentfrequency = frequencySettings.getFrequency() * 60;
+            currentfrequency = frequencySettings.getFrequency() * 60; // change to seconds
 
-            while (true)
+            while (continueThread)
             {
                 //you need to use Invoke because the new thread can't access the UI elements directly
                 MethodInvoker mi = delegate () { this.Text = DateTime.Now.ToString(); };

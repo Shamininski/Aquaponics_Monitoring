@@ -10,6 +10,9 @@ using AquaponicsMonitoringApp.ApplicationLayer;
 
 namespace AquaponicsMonitoringApp
 {
+    /// <summary>
+    /// Form Creator: Eldané
+    /// </summary>
     public partial class frmSettingsMainDash : Form
     {
         public frmSettingsMainDash()

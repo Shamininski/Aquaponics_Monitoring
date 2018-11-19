@@ -6,6 +6,7 @@ using System.Text;
 namespace AquaponicsMonitoringApp.ApplicationLayer
 {
     /// <summary>
+    /// Class Creator: Tanya
     /// This class is used to work with the contact details that will be set up for a person to get
     /// notified per tank, should the environmental values proof infavourable.
     /// </summary>

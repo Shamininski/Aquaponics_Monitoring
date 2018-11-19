@@ -10,6 +10,11 @@ using AquaponicsMonitoringApp.ApplicationLayer;
 
 namespace AquaponicsMonitoringApp
 {
+    /// <summary>
+    /// Form Creator: Eldané
+    /// This form is used to update an existing user's information, register a new user or delete
+    /// an existing user.
+    /// </summary>
     public partial class frmEditUser : Form
     {
         public frmEditUser()

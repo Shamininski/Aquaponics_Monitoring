@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace AquaponicsMonitoringApp.ApplicationLayer
 {
     /// <summary>
+    /// Class Creator: Tanya
     /// This class is used to create an object that represents a sensor reading received from the sensors.
     /// </summary>
     public class SensorReading
@@ -105,6 +106,8 @@ namespace AquaponicsMonitoringApp.ApplicationLayer
 
             foreach (string item in allSensorValues)
             {
+                // Example of data format in the text file:
+                // DateTime#SensorReading
                 string[] fields = item.Split('#');
                 dateOfReading = Convert.ToDateTime(fields[0]);
                 reading = Convert.ToDecimal(fields[1]);
@@ -120,16 +123,12 @@ namespace AquaponicsMonitoringApp.ApplicationLayer
             
         }
 
-        public List<SensorReading> getAllSensorReadings(Sensor sensor)
-        {
-            List<SensorReading> readings = new List<SensorReading>();
-
-            DataAccessLayer.DataHandler dataHandler = DataAccessLayer.DataHandler.getInstance();
-            readings = dataHandler.getSensorReadings(sensor);
-
-            return readings;
-        }
-
+        // This method will receive a list of sensors, then it will loop through this list and it will
+        // search for the latest sensor reading of both pH and Temperatures sensors of a specific tank.
+        // A Dictionary will be returned with the tank location as Key and the following as Value:
+        // Depending on the first type the values will be in the following format:
+        // If Temperature is first: temp°#pH#
+        // If pH is first: pH#temp#
         public Dictionary<string,string> currentReadingPerSensor(List<Sensor> sensors)
         {
             Dictionary<string, string> sensorData = new Dictionary<string, string>();
@@ -144,7 +143,14 @@ namespace AquaponicsMonitoringApp.ApplicationLayer
                 {
                     if (sen.Location == tank)
                     {
-                        reading += Convert.ToString(dataHandler.getCurrentSensorReading(sen))+"#";
+                        if (sen.Type == "Temperature")
+                        {
+                            reading += Convert.ToString(dataHandler.getCurrentSensorReading(sen)) + "°#";
+                        }
+                        else if (sen.Type == "pH")
+                        {
+                            reading += Convert.ToString(dataHandler.getCurrentSensorReading(sen)) + "#";
+                        }
                     }
                 }
 
@@ -155,6 +161,7 @@ namespace AquaponicsMonitoringApp.ApplicationLayer
             return sensorData;
         }
 
+        // Get readings for a 24 hour period
         public List<SensorReading> getDayReadings(Sensor sensor)
         {
             List<SensorReading> readings = new List<SensorReading>();

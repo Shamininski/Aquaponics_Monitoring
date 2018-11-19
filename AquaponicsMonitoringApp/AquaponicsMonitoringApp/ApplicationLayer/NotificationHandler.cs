@@ -6,6 +6,9 @@ using System.Net.Mail;
 
 namespace AquaponicsMonitoringApp.ApplicationLayer
 {
+    /// <summary>
+    /// Class Creator: Tanya
+    /// </summary>
     public class NotificationHandler
     {
         private DateTime notifyDate;

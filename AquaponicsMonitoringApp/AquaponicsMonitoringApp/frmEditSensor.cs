@@ -10,6 +10,11 @@ using AquaponicsMonitoringApp.ApplicationLayer;
 
 namespace AquaponicsMonitoringApp
 {
+    /// <summary>
+    /// Form Creator: Eldané
+    /// This form is used to update the critical ranges of each sensor or to delete an 
+    /// existing sensor.
+    /// </summary>
     public partial class frmEditSensor : Form
     {
         public frmEditSensor()
@@ -18,6 +23,7 @@ namespace AquaponicsMonitoringApp
             Sensor sensor = new Sensor();
             List<string> allTanks = sensor.getAllTanks();
 
+            // Populate combobox
             cmbTanks.Items.Add("SELECT A TANK:");
             foreach (string tank in allTanks)
             {
@@ -26,22 +32,9 @@ namespace AquaponicsMonitoringApp
 
         }
 
-        private void btnEditSensor_Click(object sender, EventArgs e)
-        {
-            frmEditSensor EditSensor = new frmEditSensor();
-            EditSensor.Show();
-            this.Close();
-        }
-
-        private void btnBackToMain_Click(object sender, EventArgs e)
-        {
-            frmSettingsMainDash MainSettings = new frmSettingsMainDash();
-            MainSettings.Show();
-            this.Close();
-        }
-
         private void btnCloseEditSensor_Click(object sender, EventArgs e)
         {
+            // This loop closes all open forms excluding the Main form.
             for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
             {
                 if (Application.OpenForms[i].Name == "frmFormSeparator")
@@ -104,6 +97,8 @@ namespace AquaponicsMonitoringApp
             cmbSensorsToDelete.Items.Clear();
             cmbSensorsToUpdate.Items.Add("SELECT A SENSOR:");
             cmbSensorsToDelete.Items.Add("SELECT A SENSOR:");
+
+            // Populate both combo boxes
             foreach (Sensor item in allSensors)
             {
                 if (item.Location == cmbTanks.SelectedItem.ToString())
@@ -149,6 +144,7 @@ namespace AquaponicsMonitoringApp
                 }
             }
 
+            // Display the current values as deafault values in numeric spinners
             nudMaxValue.Value = (decimal)oldMaxValue;
             nudMinValue.Value = (decimal)oldMinValue;
         }

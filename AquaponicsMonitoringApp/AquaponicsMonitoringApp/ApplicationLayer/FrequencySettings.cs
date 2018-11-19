@@ -5,6 +5,9 @@ using System.Text;
 
 namespace AquaponicsMonitoringApp.ApplicationLayer
 {
+    /// <summary>
+    /// Class Creator: Tanya
+    /// </summary>
     public class FrequencySettings
     {
         private DateTime freqDate;
@@ -62,6 +65,7 @@ namespace AquaponicsMonitoringApp.ApplicationLayer
             dh.insertFrequency(this);
         }
 
+        // Get the time interval in minutes
         public int getFrequency()
         {
             int frequency = 1;
@@ -69,15 +73,6 @@ namespace AquaponicsMonitoringApp.ApplicationLayer
             DataAccessLayer.DataHandler dataHandler = DataAccessLayer.DataHandler.getInstance();
             frequency = dataHandler.getCurrentFrequency();
             return frequency;
-        }
-
-        public DateTime getLastUpdatedFrecencyDateTime()
-        {
-            DateTime lastUpdatedFrequency;
-            DataAccessLayer.DataHandler dataHandler = DataAccessLayer.DataHandler.getInstance();
-            lastUpdatedFrequency = dataHandler.getLastUpdatedFrequencyDate();
-       
-            return lastUpdatedFrequency;
         }
     }
 }

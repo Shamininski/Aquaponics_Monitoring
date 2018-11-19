@@ -9,6 +9,7 @@ using System.Net.Mail;
 namespace AquaponicsMonitoringApp.ApplicationLayer
 {
     /// <summary>
+    /// Class Creator: Tanya
     /// This class represents users that are allowed full access to the system.
     /// Users will be required to log in whenever the settings and customization of sensors are changed.
     /// </summary>
@@ -198,6 +199,8 @@ namespace AquaponicsMonitoringApp.ApplicationLayer
             }
         }
 
+        // In order to keep track of a user that is currently logged into the system, we make use
+        // of a text file to store the details of the currently logged in user.
         public string getCurrentLoggedUser()
         {
             string user = "";

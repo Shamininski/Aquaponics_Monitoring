@@ -172,29 +172,6 @@ namespace AquaponicsMonitoringApp.DataAccessLayer
             return freq;
         }
 
-        public List<FrequencySettings> getAllFrequencySettings()
-        {
-            List<FrequencySettings> freqs = new List<FrequencySettings>();
-            DataTable data = readDataFromDB("SELECT * FROM [dbo].[tblUpdateFrequency]");
-            foreach (DataRow item in data.Rows)
-            {
-                DateTime date = Convert.ToDateTime(item["FreqSetDate"].ToString());
-                FrequencySettings fs = new FrequencySettings(date, Convert.ToInt32(item["Frequency"].ToString()));
-                freqs.Add(fs);
-            }
-            return freqs;
-        }
-
-        public DateTime getLastUpdatedFrequencyDate()
-        {
-            DateTime lastDate = new DateTime();
-            DataTable data = readDataFromDB("SELECT TOP 1 FreqSetDate FROM[dbo].[tblUpdateFrequency] ORDER BY FreqSetDate DESC");
-            foreach (DataRow item in data.Rows)
-            {
-                lastDate = Convert.ToDateTime(item["FreqSetDate"].ToString());
-            }
-            return lastDate;
-        }
 
         public decimal getCurrentSensorReading(Sensor sensor)
         {

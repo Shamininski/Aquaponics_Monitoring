@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace AquaponicsMonitoringApp.ApplicationLayer
 {
     /// <summary>
+    /// Class Creator: Tanya
     /// This class deals with the different sensor's characteristics themselves.
     /// </summary>
     public class Sensor
@@ -109,6 +110,7 @@ namespace AquaponicsMonitoringApp.ApplicationLayer
             return allSensors;
         }
 
+        // Get the names of all the Tanks in the system
         public List<string> getAllTanks()
         {
             List<string> allTanks = new List<string>();

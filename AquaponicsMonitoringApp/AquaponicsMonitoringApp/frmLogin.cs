@@ -11,6 +11,10 @@ using Microsoft.VisualBasic;
 
 namespace AquaponicsMonitoringApp
 {
+    /// <summary>
+    /// Form Creator: Eldané
+    /// This form is what the user will use to log into the settings section of the system.
+    /// </summary>
     public partial class frmLogin : Form
     {
         public frmLogin()

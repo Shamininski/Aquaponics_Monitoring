@@ -9,6 +9,12 @@ using System.Windows.Forms;
 
 namespace AquaponicsMonitoringApp
 {
+    /// <summary>
+    /// Form Creator: Eldané
+    /// This form is used to provide a partially transparent barrier between two forms when one
+    /// form overlap another form. 
+    /// The barrier allows the user to focus on only one form while seeing the form below.
+    /// </summary>
     public partial class frmFormSeparator : Form
     {
         public frmFormSeparator()

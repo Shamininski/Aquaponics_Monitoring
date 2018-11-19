@@ -8,6 +8,7 @@ using System.Net.Mail;
 namespace AquaponicsMonitoringApp.ApplicationLayer
 {
     /// <summary>
+    /// Class Creator: Tanya
     /// This class is used to work with the notification details per sensor, therefore determines
     /// when the listed contacts should be notified of changes within the system.
     /// </summary>

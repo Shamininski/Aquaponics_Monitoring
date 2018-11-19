@@ -49,7 +49,6 @@ C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMon
 C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmEditSensor.resources
 C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmEditUser.resources
 C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmFormSeparator.resources
-C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmLiveGraph.resources
 C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmLogin.resources
 C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmMainDashboard.resources
 C:\Users\Eldane\Documents\Extra\Penn State\AquaponicsMonitoringApp\AquaponicsMonitoringApp\obj\Debug\AquaponicsMonitoringApp.frmNotificationSettings.resources
