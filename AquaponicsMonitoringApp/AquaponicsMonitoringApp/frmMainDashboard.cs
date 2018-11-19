@@ -18,35 +18,56 @@ namespace AquaponicsMonitoringApp
             InitializeComponent();
 
             Sensor sensor = new Sensor();
-            List<string> allTanks = sensor.getAllTanks();
+            List<Sensor> allSensors = sensor.getAllSensors();
+            SensorReading reading = new SensorReading();
+            Dictionary<string, string> allData = reading.currentReadingPerSensor(allSensors);
+            int counter = 0;
 
-            for (int i = 0; i < allTanks.Count; i++)
+            foreach(KeyValuePair<string,string> kvp in allData)
             {
-                string panelName = "pnlDashAction"+ Convert.ToString(i + 1);
+                string panelName = "pnlDashAction" + Convert.ToString(counter + 1);
                 foreach (Control item in tableLayoutPanel1.Controls)
                 {
                     if (item.Name == panelName)
                     {
                         item.Visible = true;
 
-                        string headerName = "pnlDashAction" + Convert.ToString(i + 1)+"Header";
+                        string headerName = "pnlDashAction" + Convert.ToString(counter + 1) + "Header";
                         foreach (Control panelItem in item.Controls)
                         {
                             if (panelItem.Name == headerName)
                             {
-                                string lableName = "lblDashAction" + Convert.ToString(i + 1);
+                                string lableName = "lblDashAction" + Convert.ToString(counter + 1);
                                 foreach (Control lableItem in panelItem.Controls)
                                 {
                                     if (lableItem.Name == lableName)
                                     {
-                                        lableItem.Text = allTanks[i].ToUpper();
+                                        string tank = kvp.Key;
+                                        lableItem.Text = tank;
                                     }
                                 }
-                            }   
+                            }
+
+                            string tempLable = "lblTempA" + Convert.ToString(counter + 1);
+                            string pHLable = "lblPhA" + Convert.ToString(counter + 1);
+                            string tankReading = kvp.Value;
+                            string[] field = tankReading.Split('#');
+
+                            if (panelItem.Name == tempLable)
+                            {
+                                string tempReading = field[0] +"°C";
+                                panelItem.Text = tempReading;
+                            }
+                            else if (panelItem.Name == pHLable)
+                            {
+                                string pHReading = field[1];
+                                panelItem.Text = pHReading;
+                            }
                         }
                     }
                 }
             }
+
         }
 
         System.Threading.Thread t;

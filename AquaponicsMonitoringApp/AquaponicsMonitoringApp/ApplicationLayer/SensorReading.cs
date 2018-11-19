@@ -79,7 +79,7 @@ namespace AquaponicsMonitoringApp.ApplicationLayer
 
         public void addReading()
         {
-            DataAccessLayer.DataHandler dh = new DataAccessLayer.DataHandler();
+            DataAccessLayer.DataHandler dh = DataAccessLayer.DataHandler.getInstance();
             dh.insertSensorReading(this);
         }
 
@@ -130,13 +130,29 @@ namespace AquaponicsMonitoringApp.ApplicationLayer
             return readings;
         }
 
-        public decimal currentReadingPerSensor(Sensor sensor)
+        public Dictionary<string,string> currentReadingPerSensor(List<Sensor> sensors)
         {
-            decimal reading = 0;
+            Dictionary<string, string> sensorData = new Dictionary<string, string>();
             DataAccessLayer.DataHandler dataHandler = DataAccessLayer.DataHandler.getInstance();
-            reading = dataHandler.getCurrentSensorReading(sensor);
+            Sensor s = new Sensor();
+            List<string> allTanks = s.getAllTanks();
+            string reading = "";
 
-            return reading;
+            foreach (string tank in allTanks)
+            {
+                foreach (Sensor sen in sensors)
+                {
+                    if (sen.Location == tank)
+                    {
+                        reading += Convert.ToString(dataHandler.getCurrentSensorReading(sen))+"#";
+                    }
+                }
+
+                sensorData.Add(tank, reading);
+                reading = "";
+            }
+
+            return sensorData;
         }
 
         public List<SensorReading> getDayReadings(Sensor sensor)
